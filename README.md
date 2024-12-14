@@ -38,8 +38,7 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
    ```
 3. Open the project in Unity (recommended version: Unity 6 (LTS)).
 
-   > [!NOTE]
-   > Open the `Project Folder` as a folder in Unity Hub. If asked about any version change warning, just simply open it, might happen as right now this project is in Unity 6000.23f, and later minor changes might happen.
+   > **Note:** Open the `Project Folder` as a folder in Unity Hub. If asked about any version change warning, just simply open it, might happen as right now this project is in Unity 6000.23f, and later minor changes might happen.
 
 4. After opening an untitled scene will open, ignore that and navigate to the `First level` scene in the Project Window below, `Goto Project Folder --> Assets --> Scenes --> First Level`. This is where all the scene will be saved.
 
