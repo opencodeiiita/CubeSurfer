@@ -41,7 +41,15 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
    > [!NOTE]
    > Open the `Project Folder` as a folder in Unity Hub. If asked about any version change warning, just simply open it, might happen as right now this project is in Unity 6000.23f, and later minor changes might happen.
 
-4. Explore the issue and the project folder and start contributing!
+4. After opening an untitled scene will open, ignore that and navigate to the `First level` scene in the Project Window below, `Goto Project Folder --> Assets --> Scenes --> First Level`. This is where all the scene will be saved.
+
+5. Explore the issue and the project folder and start contributing!
+
+> [!NOTE]
+> Your main code and working will be in the `Assets` folder.
+
+> [!CAUTION]
+> DO NOT modify any of the settings outside the `Assets` folder until told, as it might break the project!
 
 ## ⚡ Development Guidelines
 
@@ -51,6 +59,8 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
 
 > [!CAUTION]
 > Failure to follow any of these might result in a tempban!
+
+> [!TIP] > **Facing some difficulties?** Refer [here](#-communication) to clarify your doubts.
 
 ## 🔗 Reference Links
 
@@ -62,7 +72,7 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
 
 ```bash
 .
-├─ 📁 CubeSurfer
+├─ 📁 Project Folder
 │   ├── 📁 Assets
 │   │   ├── 📁 Scripts
 │   │   ├── 📁 Prefabs
@@ -87,7 +97,7 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
 
 ## 💻 Communication
 
-Stay connected on our **[Discord](https://discord.gg/YcUxtezg)** channel for updates and discussions with mentors and contributors.
+Stay connected on our **[Discord](https://discord.gg/YcUxtezg)** channel for updates and discussions with mentors and contributors or to ask any doubt needed. Make sure to use suitable channels according to your repo in the server.
 
 ## 🤝 Mentor
 
