@@ -1,7 +1,3 @@
-Here’s the updated README file for your CubeSurfer project, tailored for game development:
-
----
-
 # CubeSurfer
 
 Welcome to **CubeSurfer**, a beginner-friendly project to dive into game development with Unity! Whether you're new to game dev or looking to sharpen your skills, CubeSurfer offers a fun and interactive way to learn while contributing to OpenCode 2024.
