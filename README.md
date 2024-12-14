@@ -59,7 +59,8 @@ Welcome to **CubeSurfer**, a beginner-friendly project to dive into game develop
 > [!CAUTION]
 > Failure to follow any of these might result in a tempban!
 
-> [!TIP] > **Facing some difficulties?** Refer [here](#-communication) to clarify your doubts.
+> [!TIP]
+> Facing some difficulties Refer [here](#-communication) to clarify your doubts.
 
 ## 🔗 Reference Links
 
@@ -101,9 +102,11 @@ Stay connected on our **[Discord](https://discord.gg/YcUxtezg)** channel for upd
 ## 🤝 Mentor
 
 1. **Bhavya Gupta** _(aka Gamin8ing)_  
-   _Discord handler and an all-time gamer_  
+   _Game dev and an all-time gamer_  
    `GitHub:` [Gamin8ing](https://github.com/Gamin8ing)  
-   `Discord:` gamin8ing
-2.
+   `Discord:` gamin8ing (or blackHole)
+2. **Srijan Suryansh**
+   `Github:` [Lordlyamigo](https://github.com/LORDLYAMIGO/)
+   ``Discord:` Lordlyamiga
 
 Let’s build something amazing together with CubeSurfer! 🚀
