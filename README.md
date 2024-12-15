@@ -107,6 +107,6 @@ Stay connected on our **[Discord](https://discord.gg/YcUxtezg)** channel for upd
    `Discord:` gamin8ing (or blackHole)
 2. **Srijan Suryansh**
    `Github:` [Lordlyamigo](https://github.com/LORDLYAMIGO/)
-   ``Discord:` Lordlyamiga
+   `Discord:` Lordlyamiga
 
 Let’s build something amazing together with CubeSurfer! 🚀
