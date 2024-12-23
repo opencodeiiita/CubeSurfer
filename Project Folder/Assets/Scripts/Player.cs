@@ -1,8 +1,14 @@
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public event EventHandler OnGameOver;
+
+    public static Player Instance { get; private set; }
+
     [SerializeField] private Rigidbody rb;
 
     [SerializeField] private float forwardForce = 10f;
@@ -10,6 +16,20 @@ public class PlayerMovement : MonoBehaviour
     private float forceMultiplier = 100f;
 
     private bool hasCollided = false;
+
+    float initialZ;//stores initial z coordinate for score purpose
+    const float scoreMultiplier = 0.7f;
+
+    private void Awake()
+    {
+        if(Instance != null)
+        {
+            Debug.LogError("Another instance of Player already exists.");
+            return;
+        }
+        Instance = this;
+        initialZ = transform.position.z;
+    }
 
     private void Update()
     {
@@ -39,8 +59,21 @@ public class PlayerMovement : MonoBehaviour
         {
             //in future we can call an event here
             hasCollided = true;
+
+            OnGameOver?.Invoke(this, EventArgs.Empty);
+
             Debug.Log("Game Over");
         }
+    }
+
+    public bool HasCollided()
+    {
+        return hasCollided;
+    }
+
+    public int getScore()
+    {
+        return Mathf.RoundToInt(scoreMultiplier * (transform.position.z - initialZ));
     }
 
 }
