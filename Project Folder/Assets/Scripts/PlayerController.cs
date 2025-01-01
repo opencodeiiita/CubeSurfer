@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 7f; // Adjustable jump force
+    public float fallMultiplier = 2.5f; // Adjust the fall speed
     private bool isGrounded;
 
     private Rigidbody rb;
@@ -17,8 +17,27 @@ public class PlayerController : MonoBehaviour
     private IEnumerator JumpAnimation()
     {
         Vector3 originalScale = transform.localScale;
-        transform.localScale = originalScale * 1.2f;
-        yield return new WaitForSeconds(0.2f);
+        Vector3 targetScale = originalScale * 1.2f;
+
+        // Smoothly increase scale
+        float elapsedTime = 0f;
+        float duration = 0.2f;
+        while (elapsedTime < duration)
+        {
+            transform.localScale = Vector3.Lerp(originalScale, targetScale, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        transform.localScale = targetScale;
+
+        // Smoothly reset scale
+        elapsedTime = 0f;
+        while (elapsedTime < duration)
+        {
+            transform.localScale = Vector3.Lerp(targetScale, originalScale, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
         transform.localScale = originalScale;
     }
 
@@ -28,6 +47,12 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             StartCoroutine(JumpAnimation());
+        }
+
+        // Apply additional gravity for faster falling
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
     }
 
@@ -52,4 +77,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-
